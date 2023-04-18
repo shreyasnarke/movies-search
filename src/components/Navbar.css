@@ -1,0 +1,40 @@
+nav{
+    backdrop-filter: blur(80px);
+    background: inherit;
+    background: #101011;
+    color: #D2D0D3;
+    font-size: 12px;
+    position: sticky;
+    left: 10px;
+    top:0px;
+    margin: 50px;
+}
+@media screen and (min-width:900px) {
+    #navbar>div{
+        padding: 0 14px;
+    }
+}
+@media screen and (max-width:900px) {
+    #navbar>div{
+        padding: 0 3px;
+        visibility: hidden;
+    }
+    #navbar>:nth-child(1){
+        visibility: visible;
+    }
+    #navbar>:last-child{
+        visibility: visible;
+    }
+}
+@media screen and (min-width:1200px) {
+    #navbar>div{
+        padding: 0 19.5px;
+    }
+}
+article#navbar{
+    height: 46px;
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
